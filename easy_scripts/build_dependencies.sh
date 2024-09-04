@@ -2,7 +2,7 @@
 
 # Función para comprobar si un paquete está instalado
 is_installed() {
-    dpkg -l | grep -q "$1"
+    dpkg-query -W -f='${Status}' "$1" 2>/dev/null | grep -q "install ok installed"
 }
 
 # Actualizar el sistema
