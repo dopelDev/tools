@@ -10,7 +10,7 @@ echo "Actualizando el sistema..."
 sudo apt update && sudo apt upgrade -y
 
 # Lista de herramientas esenciales de compilación
-TOOLS=("build-essential" "gcc" "g++" "make" "ninja-build" "cmake" "linux-headers-$(uname -r)" "git" "pkg-config" "clang" "lld" "libssl-dev" "zlib1g-dev")
+TOOLS=("build-essential" "gcc" "g++" "make" "ninja-build" "cmake" "linux-headers-$(uname -r)" "git" "pkg-config" "clang" "lld" "libssl-dev" "zlib1g-dev" "libfontconfig" "libfontconfig-dev" "libfontconfig1" "libfontconfig1-dev")
 
 # Instalar herramientas necesarias
 for tool in "${TOOLS[@]}"; do
